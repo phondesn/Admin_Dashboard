@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./body.css">
+    <link rel="stylesheet" href="./SideNavStyle.css">
+    <link rel="stylesheet" href="./TopbarStyle.css">
+    <link rel="stylesheet" href="./Main.css">
+    <link rel="stylesheet" href="./Charts.css">
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Side bar navigation--> 
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="rose-outline"></ion-icon></span>
+                        <span class="title">Brand Name</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="people"></ion-icon></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbubbles-sharp"></ion-icon></span>
+                        <span class="title">Messeges</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="information-circle"></ion-icon></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="hammer"></ion-icon></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out"></ion-icon></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Main Page-->
+        <div class="main">
+            <!-- Creating Topbar -->
+            <div class="Topbar">
+                <!-- Toggle -->
+                <div class="toggle">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+                <!-- Search Bar -->
+                <div class="searchbox">
+                    <label>
+                        <input type="text" placeholder="Search">
+                        <ion-icon name="search"></ion-icon>
+                    </label>
+                </div>
+                <!-- User Image -->
+                <div class="user">
+                    <img src="./images/AVT0.jpeg" alt="User Image">
+                </div>
+            </div>
+            <!-- CardBox -->
+            <div class="cardBox">
+                <div class="cards">
+                    <div>
+                        <div class="numbers">951</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="boxicon"><ion-icon name="eye"></ion-icon></div>
+                </div>
+                <div class="cards">
+                    <div>
+                        <div class="numbers">172</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="boxicon"><ion-icon name="chatbubble-ellipses"></ion-icon></div>
+                </div>
+                <div class="cards">
+                    <div>
+                        <div class="numbers">42</div>
+                        <div class="cardName">Sales</div>
+                    </div>
+                    <div class="boxicon"><ion-icon name="cart"></ion-icon></i></div>
+                </div>
+                <div class="cards">
+                    <div>
+                        <div class="numbers">&#8377;1468.4</div>
+                        <div class="cardName">Earnings (in Thousands)</div>
+                    </div>
+                    <div class="boxicon"><ion-icon name="card"></ion-icon></div>
+                </div>
+            </div>
+
+            <!-- Charts Added -->
+            <div class="graphBox">
+                <div class="box">
+                    <canvas id="traffic"></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="earnings"></canvas>
+                </div>  
+            </div>
+
+
+            <div class="listDetails">
+                <!-- List of Order Details -->
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table style="margin-top: -400px;">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price (&#8377;)</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Apple Mobiles</td>
+                                <td>68,250</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr><tr>
+                                <td>Samsung Refrigerators</td>
+                                <td>25,400</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr><tr>
+                                <td>LG Televisions</td>
+                                <td>18,650</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr><tr>
+                                <td>Whirlpool Coolers</td>
+                                <td>7750</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr><tr>
+                                <td>Dell Laptops</td>
+                                <td>95,100</td>
+                                <td>Due</td>
+                                <td><span class="status inprogress">In Progress</span></td>
+                            </tr><tr>
+                                <td>Adidas Shoes</td>
+                                <td>3450</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr><tr>
+                                <td>Demin Shirts</td>
+                                <td>1650</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr><tr>
+                                <td>Titan Watches</td>
+                                <td>3450</td>
+                                <td>Paid</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr><tr>
+                                <td>JBL Speakers</td>
+                                <td>120</td>
+                                <td>Due</td>
+                                <td><span class="status inprogress">In Progress</span></td>
+                            </tr><tr>
+                                <td>Godrej Cupboard</td>
+                                <td>28,200</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- New Customers -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customer</h2>
+                        <a href=""></a>
+                    </div Tab>
+                    <table style="margin-top: 0px;">
+                        <tr>
+                            <td style="width: 60px;"><div class="imgbox"><img src="./images/AVT1.png" style="width: 40px;"></div></td>
+                            <td><h4>Shubham<br><span>India</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px;"><div class="imgbox"><img src="./images/AVT2.png" style="width: 40px;"></div></td>
+                            <td><h4>Pritam<br><span>Russia</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px;"><div class="imgbox"><img src="./images/AVT3.jpeg" style="width: 40px;"></div></td>
+                            <td><h4>Aniket<br><span>Ausralia</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px;"><div class="imgbox"><img src="./images/AVT4.jpeg" style="width: 40px;"></div></td>
+                            <td><h4>Atharva<br><span>Canada</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px;"><div class="imgbox"><img src="./images/AVT5.png" style="width: 40px;"></div></td>
+                            <td><h4>Viplove<br><span>Singapore</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px;"><div class="imgbox"><img src="./images/AVT6.jpeg" style="width: 40px;"></div></td>
+                            <td><h4>Pratik<br><span>India</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px;"><div class="imgbox"><img src="./images/AVT7.jpeg" style="width: 40px;"></div></td>
+                            <td><h4>Mayank<br><span>USA</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 60px;"><div class="imgbox"><img src="./images/AVT8.jpeg" style="width: 40px;"></div></td>
+                            <td><h4>Sourabh<br><span>England</span></h4></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="./chart.js"></script>
+
+    <script>
+        
+
+        // For hoverinh effect
+        let list = document.querySelectorAll('.navigation li');
+        function activeLink() {
+            list.forEach((item)=>
+            item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item)=>
+        item.addEventListener('mouseover',activeLink));
+
+        // debugger;
+        //Menu Toggle
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function() {
+            // console.log("Before click");
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+            // console.log("After click");
+        }
+
+    </script>
+</body>
+</html>
